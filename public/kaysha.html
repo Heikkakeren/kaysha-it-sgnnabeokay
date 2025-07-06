@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kaysha ✨</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with floating hearts -->
+        <div class="floating-hearts">
+            <div class="heart">💙</div>
+            <div class="heart">🤍</div>
+            <div class="heart">💙</div>
+            <div class="heart">🤍</div>
+            <div class="heart">💙</div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="header">
+                <h1 class="title">Untuk Kaysha</h1>
+                <div class="subtitle">✨ tempat tenang untukmu ✨</div>
+            </div>
+
+            <!-- Music player -->
+            <div class="music-section">
+                <div class="music-player">
+                    <div class="music-icon">🎵</div>
+                    <div class="music-controls">
+                        <button id="playBtn" class="play-btn">▶️</button>
+                        <span class="music-title">musik untuk hati</span>
+                        <div class="volume-control">
+                            <span>🔊</span>
+                            <input type="range" id="volumeSlider" min="0" max="100" value="50" class="volume-slider">
+                        </div>
+                    </div>
+                </div>
+                <audio id="audioPlayer" preload="auto">
+                    <source src="sedih.mp3" type="audio/mpeg">
+                    Browser kamu tidak mendukung audio player.
+                </audio>
+            </div>
+
+            <!-- Message section -->
+            <div class="message-section">
+                <div class="message-card">
+                    <div class="message-header">
+                        <span class="message-icon">💌</span>
+                        <span>pesan untukmu</span>
+                    </div>
+                    <div class="message-content">
+                        <p>aku gak tau pasti apa yang lagi kamu rasain sekarang,</p>
+                        <p>tapi kalau hatimu lagi gemetar, kalau napasmu berat, dan dunia terasa terlalu ramai</p>
+                        <p><strong>aku harap kamu tau: gak apa-apa buat merasa lelah. gak apa-apa kalau belum siap cerita apa-apa.</strong></p>
+                        
+                        <p>kamu gak harus jelaskan semuanya. cukup istirahat… pelan-pelan aja.</p>
+                        <p>aku gak datang buat nanya atau maksa apa-apa.</p>
+                        <p><strong>aku cuma pengen kamu ngerasa gak sendirian,</strong></p>
+                        <p>meskipun aku bukan lagi orang yang nemenin kamu setiap hari.</p>
+                        
+                        <p>aku harap malam ini kamu bisa ketemu tenang, walau sedikit.</p>
+                        <p>dan semoga besok, hatimu bisa lebih ringan, walau belum pulih sepenuhnya.</p>
+                        <p><strong>kamu pantas ngerasa tenang, sayang… meskipun dunia lagi berat.</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Write message section -->
+            <div class="write-section">
+                <div class="write-card">
+                    <div class="write-header">
+                        <span class="write-icon">✍️</span>
+                        <span>tulis perasaanmu disini</span>
+                    </div>
+                    <textarea id="userMessage" placeholder="kamu bisa tulis apa aja disini... gak ada yang akan menghakimi. ini tempat aman untukmu 💙" class="message-textarea"></textarea>
+                    <div class="write-actions">
+                        <button id="saveBtn" class="save-btn">💾 simpan</button>
+                        <button id="clearBtn" class="clear-btn">🗑️ hapus</button>
+                    </div>
+                    <div id="saveMessage" class="save-notification hidden">Pesanmu sudah tersimpan dengan aman 💙</div>
+                </div>
+            </div>
+
+            <!-- Breathing exercise -->
+            <div class="breathing-section">
+                <div class="breathing-card">
+                    <div class="breathing-header">
+                        <span class="breathing-icon">🫁</span>
+                        <span>latihan nafas</span>
+                    </div>
+                    <div class="breathing-circle" id="breathingCircle">
+                        <div class="breathing-text" id="breathingText">klik untuk mulai</div>
+                    </div>
+                    <button id="breathingBtn" class="breathing-btn">mulai latihan nafas</button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>kamu gak sendirian. ada yang peduli, bahkan dari jauh 💙</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
