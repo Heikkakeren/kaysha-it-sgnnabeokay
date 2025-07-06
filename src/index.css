@@ -103,3 +103,12 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes float {
+  from { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  to { 
+    transform: translateY(-20px) rotate(5deg); 
+  }
+}
